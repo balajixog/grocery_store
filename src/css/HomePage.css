@@ -1,0 +1,280 @@
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  background: linear-gradient(135deg, #a8e063, #56ab2f);
+  color: #000;
+  animation: slideIn 1s ease-in-out;
+}
+
+.hero-text {
+  max-width: 600px;
+  animation: fadeIn 2s ease-in-out;
+  color: #000;
+  font-family: 'Edu AU VIC WA NT Hand', sans-serif;
+  margin-top: -20px;
+  margin-right: 200px;
+  margin-left: 150px;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-text .btn.shop-now-button {
+  background-color: #fff;
+  color: #56ab2f;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: inline-block;
+}
+
+.hero-text .btn.shop-now-button:hover {
+  background-color: #56ab2f;
+  color: #fff;
+}
+
+.hero-image {
+  animation: fadeIn 3s ease-in-out;
+  margin-top: -30px;
+}
+
+.hero-image img {
+  max-width: 60%;
+  height: auto;
+}
+
+.about-us-section {
+  background: #f1f1f1;
+  padding: 50px 5%;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.about-us-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-us-section p {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.features-section {
+  padding: 60px 50px;
+  text-align: center;
+  margin: 30px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  color: #504b4b;
+  background: url('../assets/fruits.png') no-repeat center center/cover;
+}
+
+.features-section::before {
+  content: "";
+  background: rgba(0, 0, 0, 0..5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.features-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.feature-item {
+  padding: 20px;
+  background-color: rgba(13, 13, 13, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+}
+
+.feature-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #53e60f;
+}
+
+.feature-item p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.offers-section {
+  padding: 60px 50px;
+  background-color: #fff;
+  text-align: center;
+  margin: 30px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.offers-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.offers-section .offer-image {
+  margin: 20px 0;
+}
+
+.offers-section .offer-image img {
+  max-width: 10%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.offers-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+/* Testimonials section */
+.testimonials-section {
+  background: #f9f9f9;
+  padding: 50px 5%;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.testimonials-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card p {
+  margin: 0;
+  font-size: 1.1em;
+  color: #666;
+}
+.contact-us-section {
+  padding: 60px 50px;
+  background-color: #fff;
+  text-align: center;
+  margin: 30px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-us-section p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.categories-section-container {
+  padding: 60px 50px;
+  background: linear-gradient(135deg, #a8e063, #56ab2f);
+  text-align: center;
+  margin: 30px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.categories-header {
+  background-color: #fff;
+}
+
+.offer-banner-section {
+  width: 90%;
+  margin: 70px;
+  padding: 0;
+}
+
+.offer-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+

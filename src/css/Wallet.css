@@ -1,0 +1,18 @@
+.wallet-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .add-funds {
+    margin-top: 20px;
+  }
+  
+  .add-funds input {
+    margin-right: 10px;
+  }
+  
+  .add-funds button {
+    padding: 10px 20px;
+  }
+  

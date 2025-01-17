@@ -1,0 +1,158 @@
+/* Overall Checkout Page Style */
+.checkout-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f7f9fc;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Header and Titles */
+  .checkout-page h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  /* Summary Section */
+  .checkout-summary {
+    background: linear-gradient(145deg, #a8e063, #56ab2f); /* Green gradient background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .checkout-summary h3 {
+    font-size: 1.75rem;
+    color: #fff;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d0e6a5;
+    padding-bottom: 10px;
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ffffff;
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .summary-total {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #fff;
+    padding-top: 10px;
+  }
+  
+  /* Checkout Form */
+  .checkout-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ddd;
+    animation: fadeIn 1s ease-out 0.5s;
+  }
+  
+  .checkout-form h3 {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: #56ab2f;
+    box-shadow: 0 0 5px rgba(86, 171, 47, 0.25);
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    background: #56ab2f; /* Green background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background: #4a9a1c;
+    transform: scale(1.02);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #d9534f;
+    margin: 15px 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Customer Service */
+  .customer-service {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .customer-service a {
+    color: #56ab2f;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .customer-service a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

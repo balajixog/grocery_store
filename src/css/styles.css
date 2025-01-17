@@ -1,0 +1,15 @@
+/* src/css/styles.css */
+.container {
+    max-width: 120000px; /* Keep as you specified */
+    margin: 0 auto;
+    padding: 0px;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  p {
+    font-family: 'Verdana', sans-serif;
+  }
+  
